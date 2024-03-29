@@ -6,7 +6,7 @@ const ContentDetailsCard = () => {
       <div className="flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-end gap-4">
           <div>
-            <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <img src="https://img.freepik.com/free-vector/holiday-items-concept-with-many-luggages_1308-96624.jpg?t=st=1711697511~exp=1711701111~hmac=cb67354d28a0e4a61aaabd091d7cc3f7d76b3b9fa8432f058f6603f5e8457a7c&w=740" />
           </div>
 
           <div className="background-color: bg-white" drop-shadow-md>

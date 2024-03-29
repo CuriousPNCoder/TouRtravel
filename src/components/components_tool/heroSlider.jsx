@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./navbar"; // Import the Navbar component
-
+import Navbar from "./navbar";
 const Heroslider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,7 +37,7 @@ const Heroslider = ({ images }) => {
     <div className="relative">
       <Navbar />
 
-      <div className="relative overflow-hidden h-[32rem] w-full">
+      <div className="w-full h-auto md:h-[32rem] sm:h-[20rem] object-cover">
         {images.map((imageUrl, index) => (
           <div
             key={index}
@@ -49,7 +48,11 @@ const Heroslider = ({ images }) => {
               src={imageUrl}
               alt={`Slide ${index}`}
               className="w-full h-full object-cover"
+              style={{ width: "100%", height: "auto" }}
             />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-white text-4xl font-bold">Centered Text</h1>
+            </div>
           </div>
         ))}
       </div>
@@ -57,15 +60,11 @@ const Heroslider = ({ images }) => {
         <button
           type="button"
           className="text-white text-2xl focus:outline-none"
-          onClick={handlePrev}>
-          {"<"}
-        </button>
+          onClick={handlePrev}></button>
         <button
           type="button"
           className="text-white text-2xl focus:outline-none"
-          onClick={handleNext}>
-          {">"}
-        </button>
+          onClick={handleNext}></button>
       </div>
     </div>
   );

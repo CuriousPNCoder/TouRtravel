@@ -42,7 +42,7 @@ const ContentDetailsCardRight = () => {
             </div>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <img src="https://img.freepik.com/free-vector/girl-with-travelling-objects-white-background_1308-87230.jpg?t=st=1711697443~exp=1711701043~hmac=72b6050643141220ac5eb2a7bc030bddb8cc666baa3aef6054c291c9eb0dd97f&w=740" />
           </div>
         </div>
       </div>

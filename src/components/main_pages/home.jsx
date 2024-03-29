@@ -5,6 +5,16 @@ import ContentDetailsCard from "../components_tool/content_detailscard";
 import ContentDetailsCardRight from "../components_tool/content_detailscardright";
 import ClientSection from "../components_tool/client_section";
 import BottomForm from "../components_tool/bottom_form";
+import slider1 from "../../assets/img/home-slider/slider-1.jpg";
+import slider2 from "../../assets/img/home-slider/slider-2.jpg";
+import slider3 from "../../assets/img/home-slider/slider-3.jpg";
+import IconCard from "../components_tool/icon_relatedtopics";
+import SaleOffer from "../../assets/img/card-img/discount.png";
+import EmiFacility from "../../assets/img/card-img/loan.png";
+import CallService from "../../assets/img/card-img/customer-service.png";
+import Available24 from "../../assets/img/card-img/24-hours.png";
+
+
 
 const Home = () => {
   const cards = [
@@ -50,39 +60,72 @@ const Home = () => {
       description: "Visit the beautiful site and that surround to experience.",
       imageUrl:
         "https://www.indiadrivertours.com/wp-content/uploads/2017/06/tpkg-manalitour.jpg",
+      
+    },
+  ];
+  const iconcards = [
+    {
+      id: 1,
+      heading: "Upto 20% off",
+      description:
+        " Book Hotels, Flights, Trains, Bus and Cabs with upto 50% off.",
+      imgUrl: SaleOffer,
+    },
+    {
+      id: 2,
+      heading: "EMI Facility",
+      description: "All types of monthly scheme provide ",
+      imgUrl: EmiFacility,
+    },
+    {
+      id: 3,
+      heading: "Call Services",
+      description: "We are try to always available in call service",
+      imgUrl: CallService,
+    },
+    {
+      id: 4,
+      heading: "24*7 Available",
+      description: " We are try to always available day or night",
+      imgUrl: Available24,
     },
   ];
 
-  const images = [
-    "https://images.pexels.com/photos/5676050/pexels-photo-5676050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/8009837/pexels-photo-8009837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/5676037/pexels-photo-5676037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  ];
+  const images = [slider1, slider2, slider3];
   return (
     <>
       <Heroslider images={images} />
       <ClientSection />
-      <div className="p-7">
+      <div className="flex items-center content-center justify-center  px-10 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 justify-center gap-4">
+          {iconcards.map((iconcard) => (
+            <IconCard iconcard={iconcard} />
+          ))}
+        </div>
+      </div>
+      <div className="p-7 animate__animated animate__fadeInLeft animate__duration-2s">
         <ContentDetailsCard />
       </div>
-      <div className="p-7">
+      <div className="p-7 animate__animated animate__fadeInRight animate__duration-2s">
         <ContentDetailsCardRight />
       </div>
-      <div className="p-7">
+      <div className="p-7 animate__animated animate__fadeInLeft animate__duration-2s">
         <ContentDetailsCard />
       </div>
       <div>
-        <h2 class="text-4xl font-extrabold dark:text-black text-center">
-          Explore Our Popular destinations
-        </h2>
-        <div className="flex items-center content-center justify-center pt-10 pb-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
-            {cards.map((card) => (
-              <Cards card={card} />
-            ))}
+        <div className="animate__animated animate__pulse animate__duration-2s">
+          <h2 class="text-4xl font-extrabold dark:text-black text-center">
+            Explore Our Popular destinations
+          </h2>
+          <div className="flex items-center content-center justify-center pt-10 pb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
+              {cards.map((card) => (
+                <Cards card={card} />
+              ))}
+            </div>
           </div>
         </div>
+
         <div class="w-full p-4 text-center bg-white border border-gray-200 shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
           <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
             Work fast from anywhere
@@ -141,7 +184,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <BottomForm/>
+      <BottomForm />
       <Footer />
     </>
   );
