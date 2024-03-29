@@ -37,7 +37,7 @@ const Heroslider = ({ images }) => {
     <div className="relative">
       <Navbar />
 
-      <div className="w-full h-auto md:h-[32rem] sm:h-[20rem] object-cover">
+      <div className="w-full h-56 sm:h-64 xl:h-96 2xl:h-96 object-cover">
         {images.map((imageUrl, index) => (
           <div
             key={index}
@@ -50,8 +50,13 @@ const Heroslider = ({ images }) => {
               className="w-full h-full object-cover"
               style={{ width: "100%", height: "auto" }}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-white text-4xl font-bold">Centered Text</h1>
+            <div className="absolute inset-0 flex items-center justify-center flex-col text-center">
+              <h1 className="text-white text-4xl font-bold mb-3">
+                Where luxury and exploration meet
+              </h1>
+              <p className="text-white">
+                "Travel with us. We promise not to lose you!"
+              </p>
             </div>
           </div>
         ))}

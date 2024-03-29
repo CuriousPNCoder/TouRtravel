@@ -120,7 +120,9 @@ const Home = () => {
           <div className="flex items-center content-center justify-center pt-10 pb-10">
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
               {cards.map((card) => (
-                <Cards card={card} />
+                <Cards
+                  card={card}
+                />
               ))}
             </div>
           </div>
