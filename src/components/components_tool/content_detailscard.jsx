@@ -17,7 +17,7 @@ const ContentDetailsCard = () => {
                 carriers, getting to and around the Kingdom couldn’t be easier.
                 A first-rate transportation system connects Saudi Arabia’s
                 provinces and cities, serving millions of people each day. With
-                4 international airports, 
+                4 international airports,
               </p>
               <p className="pt-4 pb-6">
                 With 4 international airports, served by a wealth of global
@@ -26,7 +26,7 @@ const ContentDetailsCard = () => {
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white rounded-lg bg-amber-500">
                 Read more
                 <svg
                   class="rtl:rotate-180 w-3.5 h-3.5 ms-2"

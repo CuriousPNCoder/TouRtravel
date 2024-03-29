@@ -1,11 +1,8 @@
 import React from 'react';
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
-
-
 const BottomForm = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 ">
+      <div className="grid grid-cols-1 md:grid-cols-2  pt-10">
         <div className="bg-red-50 p-10">
           <div className="grid">
             <form>
@@ -349,7 +346,7 @@ const BottomForm = () => {
                 </button>
                 <button
                   type="submit"
-                  className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white rounded-lg bg-amber-500">
                   Save
                 </button>
               </div>

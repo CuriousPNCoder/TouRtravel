@@ -1,113 +1,81 @@
 import Cards from "../components_tool/card";
 import Footer from "../components_tool/footer";
 import Heroslider from "../components_tool/heroSlider";
-import Navbar from "../components_tool/navbar";
 import ContentDetailsCard from "../components_tool/content_detailscard";
 import ContentDetailsCardRight from "../components_tool/content_detailscardright";
 import ClientSection from "../components_tool/client_section";
-import BottomForm from "../components_tool/bottom_form"
+import BottomForm from "../components_tool/bottom_form";
 
 const Home = () => {
+  const cards = [
+    {
+      id: 1,
+      title: "Digha",
+      description:
+        "A tour of the city and it's surrounding led by a professional guide.",
+      imageUrl:
+        "https://media2.thrillophilia.com/images/photos/000/111/227/original/1584452383_shutterstock_659752654.jpg?width=975&height=600",
+    },
+    {
+      id: 2,
+      title: "Darjeeling",
+      description: "The real magic is here where you can enjoy the best view.",
+      imageUrl:
+        "https://media.licdn.com/dms/image/D4D12AQFdnTxuBceVjw/article-cover_image-shrink_600_2000/0/1695134200669?e=2147483647&v=beta&t=ig_5fMXVzDFDaG32IP9W70e-WdrgA8MxC8rbqIRC7ws",
+    },
+    {
+      id: 3,
+      title: "Puri",
+      description: "Visit the beautiful site and that surround to experience.",
+      imageUrl:
+        "https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2021/07/jagannath-temple-pti-1625824583-1626056477.jpg",
+    },
+    {
+      id: 4,
+      title: "Sea Beach",
+      description: "Visit the beautiful site and that surround to experience.",
+      imageUrl:
+        "https://assets-global.website-files.com/5ca5fe687e34be0992df1fbe/626d20ba347ed25085aecf1b_beach-2022-03-09-10-00-33-utc-min%20(1).jpg",
+    },
+    {
+      id: 5,
+      title: "Amazon Jongle",
+      description: "Visit the beautiful site and that surround to experience.",
+      imageUrl:
+        "https://cdn.britannica.com/31/130031-050-469B9571/stream-Amazon-Rainforest-Ecuador.jpg",
+    },
+    {
+      id: 6,
+      title: "Manali",
+      description: "Visit the beautiful site and that surround to experience.",
+      imageUrl:
+        "https://www.indiadrivertours.com/wp-content/uploads/2017/06/tpkg-manalitour.jpg",
+    },
+  ];
 
- const cards = [
-   {
-     id: 1,
-     title: "Card 1",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-   {
-     id: 2,
-     title: "Card 2",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-   {
-     id: 3,
-     title: "Card 3",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-   {
-     id: 4,
-     title: "Card 4",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-   {
-     id: 5,
-     title: "Card 5",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-   {
-     id: 6,
-     title: "Card 6",
-     description:
-       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
-   },
-    ];
-      const images = [
-        "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1683306661472-d7bd9497c82a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1626606076701-cf4ae64b2b03?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ];
+  const images = [
+    "https://images.pexels.com/photos/5676050/pexels-photo-5676050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/8009837/pexels-photo-8009837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5676037/pexels-photo-5676037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  ];
   return (
     <>
-      <Navbar />
-      {/* start card section */}
       <Heroslider images={images} />
-
-      {/* end card section */}
-      {/* Start card design */}
+      <ClientSection />
+      <div className="p-7">
+        <ContentDetailsCard />
+      </div>
+      <div className="p-7">
+        <ContentDetailsCardRight />
+      </div>
+      <div className="p-7">
+        <ContentDetailsCard />
+      </div>
       <div>
-        <h2 class="text-4xl font-extrabold dark:text-black text-center pt-10">
-          Get inspired to plan your trip
+        <h2 class="text-4xl font-extrabold dark:text-black text-center">
+          Explore Our Popular destinations
         </h2>
-        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 text-center m-4">
-          Deliver great service experiences fast - without the complexity
-          Deliver great service
-        </p>
-        {/* start search bar design */}
-        <form class="max-w-lg mx-auto m-4">
-          <label
-            for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
-            Search
-          </label>
-          <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20">
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div>
-            <input
-              type="search"
-              id="default-search"
-              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search Mockups, Logos..."
-              required
-            />
-            <button
-              type="submit"
-              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Search
-            </button>
-          </div>
-        </form>
-        {/* end search bar design */}
         <div className="flex items-center content-center justify-center pt-10 pb-10">
           <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
             {cards.map((card) => (
@@ -115,12 +83,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-        {/* body details types Card */}
-        <ContentDetailsCard />
-        <ContentDetailsCardRight />
-        {/* end body details types Card */}
-        <ClientSection />
-        {/* start bottom design types footer */}
         <div class="w-full p-4 text-center bg-white border border-gray-200 shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
           <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
             Work fast from anywhere
@@ -178,11 +140,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-        {/* end bottom design types footer */}
       </div>
       <BottomForm/>
-
-      {/* end card design */}
       <Footer />
     </>
   );

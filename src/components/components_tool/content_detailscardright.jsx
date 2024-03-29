@@ -1,12 +1,12 @@
 import React from 'react'
 
 const ContentDetailsCardRight = () => {
-  return ( 
+  return (
     <>
       <div className="flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-end gap-4">
           <div className="background-color: bg-white" drop-shadow-md>
-            <div className="px-10 py-10">  
+            <div className="px-10 py-10">
               <p className="text-3xl">Getting Here & Around</p>
               <p className="pt-6">
                 With 4 international airports, served by a wealth of global
@@ -22,7 +22,7 @@ const ContentDetailsCardRight = () => {
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white rounded-lg bg-amber-500">
                 Read more
                 <svg
                   class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
