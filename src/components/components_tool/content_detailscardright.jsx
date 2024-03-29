@@ -22,7 +22,7 @@ const ContentDetailsCardRight = () => {
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white rounded-lg bg-amber-500">
+                class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white rounded-lg bg-amber-500 hover:bg-amber-400">
                 Read more
                 <svg
                   class="rtl:rotate-180 w-3.5 h-3.5 ms-2"

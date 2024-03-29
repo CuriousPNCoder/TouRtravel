@@ -128,7 +128,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="w-full p-4 text-center bg-white border border-gray-200 shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full  px-4  py-10 text-center bg-white border border-gray-200 shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
           <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
             Work fast from anywhere
           </h5>
